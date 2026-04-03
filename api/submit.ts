@@ -46,7 +46,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           Email: { email },
           Role: { select: { name: role } },
           LinkedIn: linkedin ? { url: linkedin } : { url: null },
-          "Submission Preview": {
+          "Submission": {
             rich_text: [{ text: { content: preview } }],
           },
           Status: { select: { name: "New" } },
