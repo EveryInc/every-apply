@@ -1,0 +1,7 @@
+{
+  "name": "every-apply",
+  "private": true,
+  "dependencies": {
+    "@vercel/node": "^5.0.0"
+  }
+}
