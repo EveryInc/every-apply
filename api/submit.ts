@@ -94,7 +94,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     if (!response.ok) {
       const err = await response.text();
       console.error("Notion API error:", err);
-      return res.status(502).json({ error: "Failed to submit application", detail: err });
+      return res.status(502).json({ error: "Failed to submit application" });
     }
 
     return res.status(200).json({
